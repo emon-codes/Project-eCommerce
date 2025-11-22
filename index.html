@@ -1,68 +1,363 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>document</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body class="page-bg text-slate-800 antialiased">
-  <!-- Header / Topbar -->
-  <header class="bg-white shadow-sm sticky top-0 z-40">
-    <div class="container-custom px-4 py-3 flex items-center justify-between">
-      <div class="flex items-center gap-4">
-        <img src="" alt="logo" class="w-12 h-12 object-contain rounded-full shadow" />
-        <div>
-          <h1 class="font-extrabold text-xl">Nest</h1>
-          <p class="text-xs text-slate-500">Market & Grocery</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="page-bg text-slate-800 antialiased">
+    <!-- Header / Topbar -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+      <div class="container-custom px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <img
+            src="./img/logo/logo.png"
+            alt="logo"
+            class="w-12 h-12 object-contain rounded-full shadow"
+          />
+          <div>
+            <h1 class="font-extrabold text-xl">Special-Offer.BD</h1>
+            <p class="text-xs text-slate-500">Market & Grocery</p>
+          </div>
         </div>
-      </div>
-      <div class="flex items-center gap-4">
-        <input type="text" placeholder="Search for items..." class="border rounded-full px-4 py-2 w-64 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-300" />
-        <nav class="hidden md:flex gap-3 text-sm">
-          <a href="#" class="px-3 py-2 hover:text-emerald-600">Home</a>
-          <a href="#" class="px-3 py-2 hover:text-emerald-600">Shop</a>
-          <a href="#" class="px-3 py-2 hover:text-emerald-600">Vendors</a>
-          <a href="#" class="px-3 py-2 hover:text-emerald-600">Contact</a>
-        </nav>
-        <div class="flex items-center gap-3">
-          <button class="text-sm px-4 py-2 bg-emerald-500 text-white rounded-full shadow">Sign in</button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="container-custom px-4 mt-8">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      <div class="lg:col-span-2 bg-white rounded-2xl shadow-lg p-8 flex flex-col justify-center" style="background-image: url('/mnt/data/exmple.png'); background-size: cover; background-position: center;">
-        <div class="backdrop-blur-sm bg-white/60 rounded-lg p-6 max-w-xl">
-          <h2 class="text-4xl font-bold text-slate-900">Pure Coffee<br/><span class="text-emerald-600">Big discount</span></h2>
-          <p class="mt-3 text-slate-700">Save up to 50% off on your first order</p>
-          <div class="mt-5 flex gap-3">
-            <input placeholder="Your email address" class="px-4 py-3 rounded-lg border focus:outline-none w-full" />
-            <button class="px-5 py-3 rounded-lg bg-emerald-600 text-white font-semibold">Subscribe</button>
+        <div class="flex items-center gap-4">
+          <input
+            type="text"
+            placeholder="Search for items..."
+            class="border rounded-full px-4 py-2 w-64 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-300"
+          />
+          <nav class="hidden md:flex gap-3 text-sm">
+            <a href="#" class="px-3 py-2 hover:text-emerald-600">Home</a>
+            <a href="#" class="px-3 py-2 hover:text-emerald-600">Shop</a>
+            <a href="#" class="px-3 py-2 hover:text-emerald-600">Vendors</a>
+            <a href="#" class="px-3 py-2 hover:text-emerald-600">Contact</a>
+          </nav>
+          <div class="flex items-center gap-3">
+            <button
+              class="text-sm px-4 py-2 bg-emerald-500 text-white rounded-full shadow"
+            >
+              Sign in
+            </button>
           </div>
         </div>
       </div>
+    </header>
 
-      <div class="space-y-4">
-        <div class="bg-white rounded-2xl shadow p-6 flex items-center gap-4">
-          <div class="flex-1">
-            <h3 class="font-bold">Delivered to your home</h3>
-            <p class="text-sm text-slate-600">Fast & Fresh</p>
+    <!-- Hero -->
+    <section class="container-custom px-4 mt-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div
+          class="lg:col-span-2 bg-white rounded-2xl shadow-lg p-8 flex flex-col justify-center"
+          style="
+            background-image: url('/mnt/data/exmple.png');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="backdrop-blur-sm bg-white/60 rounded-lg p-6 max-w-xl">
+            <h2 class="text-4xl font-bold text-slate-900">
+              Pure Coffee<br /><span class="text-emerald-600"
+                >Big discount</span
+              >
+            </h2>
+            <p class="mt-3 text-slate-700">
+              Save up to 50% off on your first order
+            </p>
+            <div class="mt-5 flex gap-3">
+              <!-- <input 
+                placeholder="Your email address"
+                class="px-4 py-3 rounded-lg border focus:outline-none w-full"
+              /> -->
+
+              <input
+                type="email"
+                placeholder="Input your gmail"
+                class="px-4 py-3 rounded-lg border focus:outline-none w-full"
+              />
+              <button
+                class="px-5 py-3 rounded-lg bg-emerald-600 text-white font-semibold"
+              >
+                Subscribe
+              </button>
+            </div>
           </div>
-          <img src="/mnt/data/exmple.png" alt="juice" class="w-24 h-24 object-contain" />
         </div>
-        <div class="bg-white rounded-2xl shadow p-6"> 
-          <h4 class="font-semibold">Everyday Fresh</h4>
-          <p class="text-sm text-slate-600">Clean products for your family</p>
+
+        <div class="space-y-4">
+          <div class="fresh flex flex-row">
+            <div
+              class="bg-white flex flex-row w-full justify-between rounded-2xl shadow p-6 gap-4 hover:shadow-lg"
+            >
+              <div>
+                <h4 class="font-semibold mr-20">Delivered to your home</h4>
+                <p class="text-sm text-slate-600">Fast & Fresh</p>
+              </div>
+
+              <img
+                class="rounded rounded-full max-w-[50px] max-h-[50px]"
+                src="./img/delevary.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="fresh flex flex-row">
+            <div
+              class="bg-white flex flex-row w-full justify-between rounded-2xl shadow p-6 gap-4 hover:shadow-lg"
+            >
+              <div>
+                <h4 class="font-semibold mr-20">Everyday Fresh</h4>
+                <p class="text-sm text-slate-600">
+                  Clean products for your family
+                </p>
+              </div>
+
+              <img
+                class="rounded rounded-full max-w-[50px] max-h-[50px]"
+                src="./img/Fresh.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="fresh flex flex-row">
+            <div
+              class="bg-white flex flex-row w-full justify-between rounded-2xl shadow p-6 gap-4 hover:shadow-lg"
+            >
+              <div>
+                <h4 class="font-semibold mr-20">Everyday Offer</h4>
+                <p class="text-sm text-slate-600">Everyday offer for you</p>
+              </div>
+
+              <img
+                class="rounded rounded-full max-w-[50px] max-h-[50px]"
+                src="./img/offer2.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-</body>
+    <!-- Categories / Product Filters (small) -->
+    <section class="container-custom px-4 mt-10">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-bold">Popular Products</h2>
+        <div class="space-x-3 text-sm text-slate-600 hidden md:inline-flex">
+          <a href="#">All</a>
+          <a href="#">Milks & Dairies</a>
+          <a href="#">Coffees & Teas</a>
+        </div>
+      </div>
+
+      <!-- Product grid -->
+      <div
+        class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
+        <!-- product card (repeat) -->
+        <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+          <img
+            src="./img/Product/waterpurifai.png"
+            alt="product"
+            class="w-full h-60 object-contain rounded-md"
+          />
+          <h3 class="mt-3 font-semibold text-sm">
+            Digital Electric Hot Water Tap
+          </h3>
+          <p class="text-xs text-slate-500 mt-1">any Wall and Basin Mount with led Display</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-emerald-600 font-bold">1000 BDT</span>
+              <span class="text-xs text-slate-400 line-through ml-2"
+                >1500<i class="fa-solid fa-bangladeshi-taka-sign"></i></span
+              >
+            </div>
+            <button
+              class="px-3 py-1 text-sm bg-emerald-100 text-emerald-700 rounded"
+            >
+              Add
+            </button>
+          </div>
+        </article>
+        <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+          <img
+            src="./img/Product/cooler.png"
+            alt="product"
+            class="w-full h-60 object-contain rounded-md"
+          />
+          <h3 class="mt-3 font-semibold text-sm  truncate ">
+            Hot 2025 New Year CX07/DLO5 Phone Cooler
+          </h3>
+          <p class="text-xs text-slate-500 mt-1">Quinoa, Brown & Red Rice</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-emerald-600 font-bold">999 BDT</span>
+              <span class="text-xs text-slate-400 line-through ml-2"
+                >1200<i class="fa-solid fa-bangladeshi-taka-sign"></i></span
+              >
+            </div>
+            <button
+              class="px-3 py-1 text-sm bg-emerald-100 text-emerald-700 rounded"
+            >
+              Add
+            </button>
+          </div>
+        </article>
+       <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+          <img
+            src="./img/Product/fan.png"
+            alt="product"
+            class="w-full h-60 object-contain rounded-md"
+          />
+          <h3 class="mt-3 font-semibold text-sm  truncate ">
+            XIAOMI SOLOVE F5 Pro Desktop Fan
+          </h3>
+          <p class="text-xs text-slate-500 mt-1">Model: SOLOVE F5 Pro</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-emerald-600 font-bold">1500 BDT</span>
+              <span class="text-xs text-slate-400 line-through ml-2"
+                >1600<i class="fa-solid fa-bangladeshi-taka-sign"></i></span
+              >
+            </div>
+            <button
+              class="px-3 py-1 text-sm bg-emerald-100 text-emerald-700 rounded"
+            >
+              Add
+            </button>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+          <img
+            src="./img/Product/invater.png"
+            alt="product"
+            class="w-full h-60 object-contain rounded-md"
+          />
+          <h3 class="mt-3 font-semibold text-sm  truncate ">
+           Must PV18-3024 ECO 3000VA Pure Sine Wave Solar Inverter
+          </h3>
+          <p class="text-xs text-slate-500 mt-1">Model: PV18-3024 ECO</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-emerald-600 font-bold">40,000 BDT</span>
+              <span class="text-xs text-slate-400 line-through ml-2"
+                >42,000<i class="fa-solid fa-bangladeshi-taka-sign"></i></span
+              >
+            </div>
+            <button
+              class="px-3 py-1 text-sm bg-emerald-100 text-emerald-700 rounded"
+            >
+              Add
+            </button>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+          <img
+            src="./img/Product/tablet.png"
+            alt="product"
+            class="w-full h-60 object-contain rounded-md"
+          />
+          <h3 class="mt-3 font-semibold text-sm  truncate ">
+           XP-Pen Artist 24 2K QHD 23.8" Digital Graphics Drawing Tablet
+          </h3>
+          <p class="text-xs text-slate-500 mt-1">Model: Artist 24</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-emerald-600 font-bold">50,000 BDT</span>
+              <span class="text-xs text-slate-400 line-through ml-2"
+                >55,000<i class="fa-solid fa-bangladeshi-taka-sign"></i></span
+              >
+            </div>
+            <button
+              class="px-3 py-1 text-sm bg-emerald-100 text-emerald-700 rounded"
+            >
+              Add
+            </button>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+          <img
+            src="./img/Product/laptop.png"
+            alt="product"
+            class="w-full h-60 object-contain rounded-md"
+          />
+          <h3 class="mt-3 font-semibold text-sm  truncate ">
+            Lenovo IdeaPad Slim 3 15ABR8 Ryzen 5 5625U 15.6" FHD Laptop
+          </h3>
+          <p class="text-xs text-slate-500 mt-1">Model: IdeaPad Slim 3 15ABR8</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-emerald-600 font-bold">999 BDT</span>
+              <span class="text-xs text-slate-400 line-through ml-2"
+                >1200<i class="fa-solid fa-bangladeshi-taka-sign"></i></span
+              >
+            </div>
+            <button
+              class="px-3 py-1 text-sm bg-emerald-100 text-emerald-700 rounded"
+            >
+              Add
+            </button>
+          </div>
+        </article>
+
+       <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+          <img
+            src="./img/Product/monitor.png"
+            alt="product"
+            class="w-full h-60 object-contain rounded-md"
+          />
+          <h3 class="mt-3 font-semibold text-sm  truncate ">
+            Dahua DHI-LM49-EW410CA 49 120Hz DQHD ELED VA Curved Ultrawide
+          </h3>
+          <p class="text-xs text-slate-500 mt-1">Gaming Monitor</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-emerald-600 font-bold">9999 BDT</span>
+              <span class="text-xs text-slate-400 line-through ml-2"
+                >13000<i class="fa-solid fa-bangladeshi-taka-sign"></i></span
+              >
+            </div>
+            <button
+              class="px-3 py-1 text-sm bg-emerald-100 text-emerald-700 rounded"
+            >
+              Add
+            </button>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+          <img
+            src="./img/Product/cpu.png"
+            alt="product"
+            class="w-full h-60 object-contain rounded-md"
+          />
+          <h3 class="mt-3 font-semibold text-sm  truncate ">
+            Lenovo IdeaCentre 3 07IRB8 Core i3 13th Gen Brand PC
+          </h3>
+          <p class="text-xs text-slate-500 mt-1">Model: IdeaCentre 3 07IRB8</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-emerald-600 font-bold">30,500 BDT</span>
+              <span class="text-xs text-slate-400 line-through ml-2"
+                >33,500<i class="fa-solid fa-bangladeshi-taka-sign"></i></span
+              >
+            </div>
+            <button
+              class="px-3 py-1 text-sm bg-emerald-100 text-emerald-700 rounded"
+            >
+              Add
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+   
+  </body>
 </html>
