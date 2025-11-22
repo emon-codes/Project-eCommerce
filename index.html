@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body class="page-bg text-slate-800 antialiased">
+  <!-- Header / Topbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="container-custom px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <img src="" alt="logo" class="w-12 h-12 object-contain rounded-full shadow" />
+        <div>
+          <h1 class="font-extrabold text-xl">Nest</h1>
+          <p class="text-xs text-slate-500">Market & Grocery</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <input type="text" placeholder="Search for items..." class="border rounded-full px-4 py-2 w-64 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-300" />
+        <nav class="hidden md:flex gap-3 text-sm">
+          <a href="#" class="px-3 py-2 hover:text-emerald-600">Home</a>
+          <a href="#" class="px-3 py-2 hover:text-emerald-600">Shop</a>
+          <a href="#" class="px-3 py-2 hover:text-emerald-600">Vendors</a>
+          <a href="#" class="px-3 py-2 hover:text-emerald-600">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <button class="text-sm px-4 py-2 bg-emerald-500 text-white rounded-full shadow">Sign in</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="container-custom px-4 mt-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="lg:col-span-2 bg-white rounded-2xl shadow-lg p-8 flex flex-col justify-center" style="background-image: url('/mnt/data/exmple.png'); background-size: cover; background-position: center;">
+        <div class="backdrop-blur-sm bg-white/60 rounded-lg p-6 max-w-xl">
+          <h2 class="text-4xl font-bold text-slate-900">Pure Coffee<br/><span class="text-emerald-600">Big discount</span></h2>
+          <p class="mt-3 text-slate-700">Save up to 50% off on your first order</p>
+          <div class="mt-5 flex gap-3">
+            <input placeholder="Your email address" class="px-4 py-3 rounded-lg border focus:outline-none w-full" />
+            <button class="px-5 py-3 rounded-lg bg-emerald-600 text-white font-semibold">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <div class="bg-white rounded-2xl shadow p-6 flex items-center gap-4">
+          <div class="flex-1">
+            <h3 class="font-bold">Delivered to your home</h3>
+            <p class="text-sm text-slate-600">Fast & Fresh</p>
+          </div>
+          <img src="/mnt/data/exmple.png" alt="juice" class="w-24 h-24 object-contain" />
+        </div>
+        <div class="bg-white rounded-2xl shadow p-6"> 
+          <h4 class="font-semibold">Everyday Fresh</h4>
+          <p class="text-sm text-slate-600">Clean products for your family</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

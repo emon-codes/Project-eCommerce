@@ -1,0 +1,11 @@
+
+
+
+
+.container-custom {
+    
+    max-width: 1200px; 
+    margin: 0 auto; }
+
+
+.page-bg { background-image: radial-gradient(circle at 10% 10%, rgba(16,185,129,0.03), transparent 10%), linear-gradient(180deg,#f8faf9,#ffffff); }
