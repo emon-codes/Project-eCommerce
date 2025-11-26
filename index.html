@@ -39,7 +39,7 @@
             <a href="#" class="px-3 py-2 hover:text-emerald-600">Contact</a>
           </nav>
           <div class="flex items-center gap-3">
-            <button
+            <button onclick="window.open('./singhup.html')"
               class="text-sm px-4 py-2 bg-emerald-500 text-white rounded-full shadow"
             >
               Sign in
@@ -161,7 +161,7 @@
         class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
       >
         <!-- product card (repeat) -->
-        <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+        <div class="bg-white rounded-xl shadow p-4 flex flex-col">
           <img
             src="./img/Product/waterpurifai.png"
             alt="product"
@@ -186,8 +186,8 @@
               Add
             </button>
           </div>
-        </article>
-        <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+        </div>
+        <div class="bg-white rounded-xl shadow p-4 flex flex-col">
           <img
             src="./img/Product/cooler.png"
             alt="product"
@@ -210,8 +210,8 @@
               Add
             </button>
           </div>
-        </article>
-        <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+        </div>
+        <div class="bg-white rounded-xl shadow p-4 flex flex-col">
           <img
             src="./img/Product/fan.png"
             alt="product"
@@ -234,9 +234,9 @@
               Add
             </button>
           </div>
-        </article>
+        </div>
 
-        <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+        <div class="bg-white rounded-xl shadow p-4 flex flex-col">
           <img
             src="./img/Product/invater.png"
             alt="product"
@@ -259,9 +259,9 @@
               Add
             </button>
           </div>
-        </article>
+        </div>
 
-        <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+        <div class="bg-white rounded-xl shadow p-4 flex flex-col">
           <img
             src="./img/Product/tablet.png"
             alt="product"
@@ -284,9 +284,9 @@
               Add
             </button>
           </div>
-        </article>
+        </div>
 
-        <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+        <div class="bg-white rounded-xl shadow p-4 flex flex-col">
           <img
             src="./img/Product/laptop.png"
             alt="product"
@@ -311,9 +311,9 @@
               Add
             </button>
           </div>
-        </article>
+        </div>
 
-        <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+        <div class="bg-white rounded-xl shadow p-4 cursor-pointer transition-transfrom hover:scale-105 transition duration-300 ease-in-out will-change-transform">
           <img
             src="./img/Product/monitor.png"
             alt="product"
@@ -336,9 +336,9 @@
               Add
             </button>
           </div>
-        </article>
+        </div>
 
-        <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+        <div class="bg-white rounded-xl shadow p-4 flex flex-col">
           <img
             src="./img/Product/cpu.png"
             alt="product"
@@ -361,7 +361,7 @@
               Add
             </button>
           </div>
-        </article>
+        </div>
       </div>
     </section>
 
@@ -410,7 +410,7 @@
     </section>
 
     <div class="bg-white py-8">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="container-custom sm:px-6 ">
         <div class="mb-12">
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-semibold text-gray-800">
@@ -566,11 +566,6 @@
       </div>
     </div>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-
     <section class="container-custom px-4" alt="logo" class="mt-12">
       <div
         class="bg-emerald-50 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6"
@@ -601,7 +596,7 @@
         <div>
           <h4 class="font-bold">Special-Offer</h4>
           <p class="text-sm text-slate-600 mt-2">
-            Awesome market & grocery website template
+           
           </p>
         </div>
         <div>
@@ -615,8 +610,8 @@
         <div>
           <h5 class="font-semibold">Account</h5>
           <ul class="mt-2 text-sm text-slate-600 space-y-1">
-            <li>Sign in</li>
-            <li>View cart</li>
+            <li onclick="window.open('./singhup.html')" class="cursor-pointer">Sign in</li>
+            <li onclick="window.open('./singhup.html')" class="cursor-pointer">View cart</li>
           </ul>
         </div>
         <div>
