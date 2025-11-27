@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-     <header class="bg-white shadow-sm sticky top-0 z-40">
-      <div class="m-auto w-full px-20 py-3 flex items-center justify-between">
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+      <div
+        class="m-auto w-full px-5 md:px-20 py-3 flex items-center justify-between"
+      >
         <div
           class="flex items-center gap-4 cursor-pointer"
           onclick="window.open('./index.html')"
@@ -34,10 +36,10 @@
             type="text"
             id="productSearch"
             placeholder="Search products by title..."
-            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-emerald-500 focus:border-emerald-500 shadow-md transition-all duration-200"
+            class="w-full p-3 border border-gray-300 rounded-lg hidden md:block focus:ring-emerald-500 focus:border-emerald-500 shadow-md transition-all duration-200"
           />
 
-          <nav class="hidden md:flex gap-3 text-[16px] font-[800] uppercase">
+          <nav class="flex md:gap-3 gap-2 text-[13px] md:text-[16px] font-[800] uppercase">
             <a
               href="./index.html"
               class="text-green-900 px-3 py-2 hover:text-emerald-600"
