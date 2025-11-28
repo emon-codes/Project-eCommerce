@@ -20,3 +20,22 @@
               }
             });
           });
+
+
+
+
+
+
+
+
+
+
+
+
+                function singhup() {
+        if (singupForm.hidden === true) {
+          singupForm.hidden = false;
+        } else {
+          singupForm.hidden = true;
+        }
+      }
